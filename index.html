@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Signal Lights Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Signal Lights</h1>
+      <div clas="signals">
+        <div class="signal-container">
+          <div id="A" class="signal red" name="sequence[]" value="A"></div>
+          <input type="text" id="seqA" class="seq-input" placeholder="1" />
+        </div>
+        <div class="signal-container">
+          <div id="B" class="signal red" name="sequence[]" value="B"></div>
+          <input type="text" id="seqB" class="seq-input" placeholder="2" />
+        </div>
+        <div class="signal-container">
+          <div id="C" class="signal red" name="sequence[]" value="C"></div>
+          <input type="text" id="seqC" class="seq-input" placeholder="3" />
+        </div>
+        <div class="signal-container">
+          <div id="D" class="signal red" name="sequence[]" value="D"></div>
+          <input type="text" id="seqD" class="seq-input" placeholder="4" />
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="input-group">
+          <label for="greenInterval" name="greenInterval"
+            >Green Light Interval (seconds)</label
+          >
+          <input type="text" id="greenInterval" placeholder="enter number" />
+        </div>
+        <div class="input-group">
+          <label for="yellowInterval" name="yellowInterval"
+            >Yellow Light Interval (seconds)</label
+          >
+          <input type="text" id="yellowInterval" placeholder="enter number" />
+        </div>
+        <div class="buttons">
+          <button id="start" class="btn" type="submit">Start</button>
+          <button id="stop" class="btn">Stop</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
